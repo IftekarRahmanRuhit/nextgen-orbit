@@ -15,9 +15,51 @@
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary': '#78C4FF',
+                'nav-bg': '#020817',
+              },
+              backgroundImage: {
+                project_bg: "url('./assets/bg.jpg')",
+                
+              }
+            }
+          }
+        }
+      </script>
     <title>NextGen Orbit</title>
 </head>
 <body class="font-manrope">
+    <header class="bg-nav-bg p-5">
+        <nav class="w-11/12 mx-auto flex justify-between items-center ">
+            <div class="flex gap-2 items-center">
+                <img class="w-9 " src="./assets/Logo.png" alt="">              
+                <p class="text-2xl font-bold bg-gradient-to-r from-primary to-white bg-clip-text text-transparent">NextGen</p>
+            </div>
+            <div class="hidden md:flex text-cyan-50 flex justify-between gap-6 ">
+                <a href="" class="text-primary hover:underline">Home</a>
+                <a class="hover:text-primary hover:underline" href="">About</a>
+                <a class="hover:text-primary hover:underline" href="">Courses</a>
+                <a class="hover:text-primary hover:underline" href="">Pages</a>
+                <a class="hover:text-primary hover:underline-" href="">Contact</a>
+            </div>
+            <button class="text-cyan-50 hidden md:flex font-medium border p-2 rounded-md hover:bg-primary hover:text-black border-primary"> Get Started</button>
+            <div class=" md:hidden  border-cyan-50 rounded-full px-3 py-2 bg-slate-800">
+                <i class="fa-solid fa-bars fa-xl" style="color: #74C0FC;"></i>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+
+
     
 </body>
 </html>
